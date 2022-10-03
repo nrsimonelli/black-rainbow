@@ -1,0 +1,75 @@
+import { styled } from '../../stitches.config'
+
+export const Box = styled('div', {
+  // local resets here
+  variants: {
+    variant: {
+      1: { maxWidth: '$bp1' },
+      2: { maxWidth: '$bp2' },
+      3: { maxWidth: '$bp3' },
+      4: { maxWidth: '$bp4' },
+      5: { maxWidth: 'none' },
+    },
+    py: {
+      0: { py: 0 },
+      1: { py: '$1' },
+      2: { py: '$2' },
+      3: { py: '$3' },
+      4: { py: '$4' },
+      5: { py: '$5' },
+      6: { py: '$6' },
+      7: { py: '$7' },
+      8: { py: '$8' },
+      9: { py: '$9' },
+    },
+    px: {
+      0: { px: 0 },
+      1: { px: '$1' },
+      2: { px: '$2' },
+      3: { px: '$3' },
+      4: { px: '$4' },
+      5: { px: '$5' },
+      6: { px: '$6' },
+      7: { px: '$7' },
+      8: { px: '$8' },
+      9: { px: '$9' },
+    },
+    my: {
+      0: { my: 0 },
+      1: { my: '$1' },
+      2: { my: '$2' },
+      3: { my: '$3' },
+      4: { my: '$4' },
+      5: { my: '$5' },
+      6: { my: '$6' },
+      7: { my: '$7' },
+      8: { my: '$8' },
+      9: { my: '$9' },
+    },
+    mx: {
+      0: { mx: 0 },
+      1: { mx: '$1' },
+      2: { mx: '$2' },
+      3: { mx: '$3' },
+      4: { mx: '$4' },
+      5: { mx: '$5' },
+      6: { mx: '$6' },
+      7: { mx: '$7' },
+      8: { mx: '$8' },
+      9: { mx: '$9' },
+    },
+    boxShadow: {
+      true: {
+        boxShadow: '$2',
+      },
+    },
+  },
+  defaultVariants: {
+    px: 0,
+    py: 0,
+    my: 0,
+    mx: 0,
+    variant: 5,
+    boxShadow: true,
+  },
+})
